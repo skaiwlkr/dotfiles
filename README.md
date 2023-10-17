@@ -27,6 +27,7 @@
 ``cat id_rsa.pub | pbcopy``
 
 ## Configure Visual Studio Code
+**Add possibility to start Visual Studio Code from terminal**
 1. Start Visual Studio Code
 2. Press ``CMD + SHIFT + P`` to open Command Palette
 3. Type ``Shell``
@@ -35,14 +36,14 @@
 **Now you can open a file from terminal command in Visual Studio Code**  
 ``code .``
 
+**Configure terminal**
+1. Open Visual Studio Code
+2. Press ``CMD + Shift + P``, type settings.json and navigate to ``Open User Settings (JSON)``
+3. Paste raw code from ``settings.json`` into Visual Studio Code settings
+
 ## Configure oh-my-zsh & iTerm/Hyper
 1. Open .zshrc file ``code ~/.zshrc``
 2. Paste the content from ``.zshrc``
 3. Import [Halcyon Color Scheme](https://halcyon-theme.netlify.app/) (You can use this for many code editors as well as terminals)
 4. Import JSON-File as a profile in iTerm or import preferences from .hyper.js from this repository
 5. Change the home path of located code/ repositories
-
-## Configure Visual Studio Code
-1. Open Visual Studio Code
-2. Press ``CMD + Shift + P``, type settings.json and navigate to ``Open User Settings (JSON)``
-3. Paste raw code from ``settings.json`` into Visual Studio Code settings
