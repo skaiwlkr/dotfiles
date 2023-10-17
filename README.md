@@ -36,7 +36,12 @@
 
 ## Configure oh-my-zsh & iTerm/Hyper
 1. Open .zshrc file ``code ~/.zshrc``
-2. Copy the content from this repository
+2. Paste the content from ``.zshrc``
 3. Import [Halcyon Color Scheme](https://halcyon-theme.netlify.app/) (You can use this for many code editors as well as terminals)
 4. Import JSON-File as a profile in iTerm or import preferences from .hyper.js from this repository
 5. Change the home path of located code/ repositories
+
+## Configure Visual Studio Code
+1. Open Visual Studio Code
+2. Press ``CMD + Shift + P``, type settings.json and navigate to ``Open User Settings (JSON)``
+3. Paste raw code from ``settings.json`` into Visual Studio Code settings
