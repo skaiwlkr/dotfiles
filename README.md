@@ -4,7 +4,7 @@
 1. Install font for command line interface [Source Sans Pro for Powerline](https://github.com/powerline/fonts)
 2. Install [Homebrew](https://brew.sh/)
 3. Install [Git](https://formulae.brew.sh/formula/git) via Homebrew
-4. Install [iTerm 2](https://formulae.brew.sh/cask/iterm2) via Homebrew
+4. Install [iTerm 2](https://formulae.brew.sh/cask/iterm2) via Homebrew or [Hyper](https://hyper.is/)
 5. Install [oh-my-zsh](https://ohmyz.sh/#install)
 6. Install [Visual Studio Code](https://code.visualstudio.com/)
 
@@ -34,9 +34,9 @@
 **Now you can open a file from terminal command in Visual Studio Code**  
 ``code .``
 
-## Configure oh-my-zsh & iTerm
+## Configure oh-my-zsh & iTerm/Hyper
 1. Open .zshrc file ``code ~/.zshrc``
 2. Copy the content from this repository
 3. Import [Halcyon Color Scheme](https://halcyon-theme.netlify.app/) (You can use this for many code editors as well as terminals)
-4. Import JSON-File as a profile in iTerm
+4. Import JSON-File as a profile in iTerm or import preferences from .hyper.js from this repository
 5. Change the home path of located code/ repositories
