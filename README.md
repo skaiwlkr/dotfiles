@@ -1,12 +1,13 @@
 # Setup of new environment
 
 ## Basics
-1. Install font for command line interface [Source Sans Pro for Powerline](https://github.com/powerline/fonts)
-2. Install [Homebrew](https://brew.sh/)
-3. Install [Git](https://formulae.brew.sh/formula/git) via Homebrew
-4. Install [iTerm 2](https://formulae.brew.sh/cask/iterm2) via Homebrew or [Hyper](https://hyper.is/)
-5. Install [oh-my-zsh](https://ohmyz.sh/#install)
-6. Install [Visual Studio Code](https://code.visualstudio.com/)
+1. Create a new folder under your home directory with name ``Code``for Git repositories
+2. Install font for command line interface [Source Sans Pro for Powerline](https://github.com/powerline/fonts)
+3. Install [Homebrew](https://brew.sh/)
+4. Install [Git](https://formulae.brew.sh/formula/git) via Homebrew
+5. Install [iTerm 2](https://formulae.brew.sh/cask/iterm2) via Homebrew or [Hyper](https://hyper.is/)
+6. Install [oh-my-zsh](https://ohmyz.sh/#install)
+7. Install [Visual Studio Code](https://code.visualstudio.com/)
 
 ## Setup Git
 ``git config --global user.name "Max Mustermann"``  
