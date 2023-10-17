@@ -51,3 +51,6 @@ function md() {
 function code {
     open -a '/Volumes/Macintosh HD/Applications/Visual Studio Code.app' "$1"
 }
+
+# Set default terminal directory on start up of terminal
+cd ~/Code
