@@ -5,7 +5,7 @@
 2. Install font for command line interface [Source Sans Pro for Powerline](https://github.com/powerline/fonts)
 3. Install [Homebrew](https://brew.sh/)
 4. Install [Git](https://formulae.brew.sh/formula/git) via Homebrew
-5. Install [iTerm 2](https://formulae.brew.sh/cask/iterm2) via Homebrew or [Hyper](https://hyper.is/)
+5. Install [Hyper](https://hyper.is/) or [iTerm 2](https://formulae.brew.sh/cask/iterm2) via Homebrew
 6. Install [oh-my-zsh](https://ohmyz.sh/#install)
 7. Install [Visual Studio Code](https://code.visualstudio.com/)
 
@@ -38,12 +38,12 @@
 
 **Configure terminal**
 1. Open Visual Studio Code
-2. Press ``CMD + Shift + P``, type settings.json and navigate to ``Open User Settings (JSON)``
+2. Press ``CMD + Shift + P``, type ``settings.json`` and navigate to ``Open User Settings (JSON)``
 3. Paste raw code from ``settings.json`` into Visual Studio Code settings
 
-## Configure oh-my-zsh & iTerm/Hyper
+## Configure oh-my-zsh & Hyper/iTerm
 1. Open .zshrc file ``code ~/.zshrc``
 2. Paste the content from ``.zshrc``
 3. Import [Halcyon Color Scheme](https://halcyon-theme.netlify.app/) (You can use this for many code editors as well as terminals)
-4. Import JSON-File as a profile in iTerm or import preferences from .hyper.js from this repository
-5. Change the home path of located code/ repositories
+4. Import preferences from ``.hyper.js`` or import JSON-File ``skaiwlkr.json`` as a profile in iTerm from this repository
+5. Change the home path of located code/repositories
