@@ -47,3 +47,7 @@
 3. Import [Halcyon Color Scheme](https://halcyon-theme.netlify.app/) (You can use this for many code editors as well as terminals)
 4. Import preferences from ``.hyper.js`` or import JSON-File ``skaiwlkr.json`` as a profile in iTerm from this repository
 5. Change the home path of located code/repositories
+
+## Recommended zsh plugins
+[zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+[zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
