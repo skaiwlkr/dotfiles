@@ -2,7 +2,7 @@
 
 ## Basics
 1. Create a new folder under your home directory with name ``Code``for Git repositories
-2. Install font for command line interface [Source Sans Pro for Powerline](https://github.com/powerline/fonts)
+2. Install font for command line interface [Source Sans Pro for Powerline](https://github.com/powerline/fonts) with [Brew](https://formulae.brew.sh/cask/font-source-code-pro-for-powerline)
 3. Install [Homebrew](https://brew.sh/)
 4. Install [Git](https://formulae.brew.sh/formula/git) via Homebrew
 5. Install [Hyper](https://hyper.is/) or [iTerm 2](https://formulae.brew.sh/cask/iterm2) via Homebrew
