@@ -16,25 +16,37 @@ plugins=(git macos)
 
 source $ZSH/oh-my-zsh.sh
 
+# ALIASES NAVIGATION
 alias ..="cd .."
 alias cd..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
-alias ~="cd ~" # `cd` is probably faster to type though
+alias ~="cd ~"
 alias -- -="cd -"
-alias o="open ."
 
+# ALIASES OPEN
+alias o="open ."
 alias ll="ls -la -G"
+
+# ALIASES GIT
 alias g="git"
-alias gp="git pull"
 alias gs="git status"
+alias gp="git pull"
+alias gpo="git pull origin"
+alias gpu="git push origin"
+alias gres="git restore --staged"
 alias gundo="git reset --soft HEAD~"
 alias gamend="git commit -av --amend --no-edit"
+
+# ALIASES ZSH
 alias zshconfig="code ~/.zshrc"
+
+# ALIASES BREW
 alias install="brew install"
 alias uninstall="brew uninstall"
 
+# ALIASES PYGMENTIZE
 alias c='pygmentize -O style=monokai -f console256 -g'
 
 # FUNCTIONS
