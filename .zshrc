@@ -43,7 +43,7 @@ alias gpush="git push origin"
 alias gundo="git reset --soft HEAD~"
 alias glist="git branch -vv"
 alias gprune="git fetch --prune"
-alias gclean="git branch -vv | grep ': entfernt]' | awk '{print $1}' | xargs git branch -d"
+alias git-cleanup="git fetch --prune && for branch in \$(git branch --format '%(refname:short)' | grep -v 'main' | grep -v 'master'); do upstream=\$(git for-each-ref --format='%(upstream:short)' refs/heads/\$branch); if [ -z \"\$upstream\" ]; then echo '🗑  Deleting local-only branch:' \$branch; git branch -d \$branch; elif ! git show-ref --verify --quiet refs/remotes/\$upstream; then echo '🗑  Deleting branch with gone upstream:' \$branch; git branch -d \$branch; fi; done"
 alias gamend="git commit -av --amend --no-edit"
 
 # ALIASES ZSH
