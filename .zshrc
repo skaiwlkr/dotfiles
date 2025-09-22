@@ -41,6 +41,9 @@ alias gmain="git checkout main"
 alias gpull="git pull origin"
 alias gpush="git push origin"
 alias gundo="git reset --soft HEAD~"
+alias glist="git branch -vv"
+alias gprune="git fetch --prune"
+alias gclean="git branch -vv | grep ': entfernt]' | awk '{print $1}' | xargs git branch -d"
 alias gamend="git commit -av --amend --no-edit"
 
 # ALIASES ZSH
