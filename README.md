@@ -11,9 +11,9 @@
 
 ## Setup Git
 ``git config --global user.name "Max Mustermann"``  
-``git config --global user.email "mail@maxmustermann.com"``
-``git config --global push.default current``
-``git config --global branch.autoSetupMerge always``
+``git config --global user.email "mail@maxmustermann.com"``  
+``git config --global push.default current``  
+``git config --global branch.autoSetupMerge always``  
 
 > Warning! You'll get notified by GitHub when using an private email address. Check out [this](https://stackoverflow.com/questions/43863522/error-your-push-would-publish-a-private-email-address)
 
