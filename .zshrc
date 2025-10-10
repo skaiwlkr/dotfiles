@@ -45,7 +45,7 @@ alias glist="git branch -vv"
 alias gprune="git fetch --prune"
 alias gamend="git commit -av --amend --no-edit"
 alias gclean="git fetch --prune && for branch in \$(git branch --format '%(refname:short)' | grep -v 'main' | grep -v 'master'); do if ! git show-ref --verify --quiet refs/remotes/origin/\$branch; then git branch -d \$branch; fi; done"
-alias gcleanall="git fetch --prune && for branch in \$(git branch --format '%(refname:short)' | grep -v 'main' | grep -v 'master'); do upstream=\$(git for-each-ref --format='%(upstream:short)' refs/heads/\$branch); if [ -z \"\$upstream\" ]; then echo '🗑  Deleting local-only branch:' \$branch; git branch -d \$branch; elif ! git show-ref --verify --quiet refs/remotes/\$upstream; then echo '🗑  Deleting branch with gone upstream:' \$branch; git branch -d \$branch; fi; done"
+alias gcleanall="git fetch --prune && for branch in \$(git branch --format '%(refname:short)' | grep -v 'main' | grep -v 'master'); do upstream=\$(git for-each-ref --format='%(upstream:short)' refs/heads/\$branch); if [ -z \"\$upstream\" ]; then echo '🗑  Deleting local-only branch (likely squash-merged):' \$branch; git branch -D \$branch; elif ! git show-ref --verify --quiet refs/remotes/\$upstream; then echo '🗑  Deleting branch with gone upstream (likely squash-merged):' \$branch; git branch -D \$branch; fi; done"
 
 # ALIASES ZSH
 alias zshconfig="code ~/.zshrc"
