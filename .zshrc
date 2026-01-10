@@ -50,6 +50,11 @@ alias gcleanall="git fetch --prune && for branch in \$(git branch --format '%(re
 # ALIASES ZSH
 alias zshconfig="code ~/.zshrc"
 
+# ALIASES WORKSPACES
+alias masterball="cursor ~/Code/masterball.code-workspace"
+alias studionuca="cursor ~/Code/studionuca.code-workspace"
+alias ember="cursor ~/Code/ember.code-workspace"
+
 # ALIASES BREW
 alias install="brew install"
 alias uninstall="brew uninstall"
