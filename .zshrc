@@ -55,6 +55,9 @@ alias masterball="cursor ~/Code/code-workspaces/masterball.code-workspace"
 alias studionuca="cursor ~/Code/code-workspaces/studionuca.code-workspace"
 alias ember="cursor ~/Code/code-workspaces/ember.code-workspace"
 
+# ALIASES WORKSPACES (SWAG)
+alias community-hub="cursor ~/Code/code-workspaces/community-hub.code-workspace"
+
 # ALIASES BREW
 alias install="brew install"
 alias uninstall="brew uninstall"
