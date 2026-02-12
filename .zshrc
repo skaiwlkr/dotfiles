@@ -56,7 +56,8 @@ alias studionuca="cursor ~/Code/code-workspaces/studionuca.code-workspace"
 alias ember="cursor ~/Code/code-workspaces/ember.code-workspace"
 
 # ALIASES WORKSPACES (SWAG)
-alias community-hub="cursor ~/Code/code-workspaces/community-hub.code-workspace"
+alias swag-hub="cursor ~/Code/code-workspaces/swag-community-hub.code-workspace"
+alias swag-website="cursor ~/Code/code-workspaces/swag-website.code-workspace"
 
 # ALIASES BREW
 alias install="brew install"
