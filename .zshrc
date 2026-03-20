@@ -57,7 +57,7 @@ alias ember="cursor ~/Code/code-workspaces/ember.code-workspace"
 
 # ALIASES WORKSPACES (SWAG)
 alias swag-hub="cursor ~/Code/code-workspaces/swag-community-hub.code-workspace"
-alias swag-website="cursor ~/Code/code-workspaces/swag-website.code-workspace"
+alias swag-websites="cursor ~/Code/code-workspaces/swag-websites.code-workspace"
 
 # ALIASES BREW
 alias install="brew install"
