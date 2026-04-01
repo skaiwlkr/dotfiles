@@ -50,15 +50,6 @@ alias gcleanall="git fetch --prune && for branch in \$(git branch --format '%(re
 # ALIASES ZSH
 alias zshconfig="code ~/.zshrc"
 
-# ALIASES WORKSPACES
-alias masterball="cursor ~/Code/code-workspaces/masterball.code-workspace"
-alias studionuca="cursor ~/Code/code-workspaces/studionuca.code-workspace"
-alias ember="cursor ~/Code/code-workspaces/ember.code-workspace"
-
-# ALIASES WORKSPACES (SWAG)
-alias swag-hub="cursor ~/Code/code-workspaces/swag-community-hub.code-workspace"
-alias swag-websites="cursor ~/Code/code-workspaces/swag-websites.code-workspace"
-
 # ALIASES BREW
 alias install="brew install"
 alias uninstall="brew uninstall"
@@ -79,6 +70,43 @@ function md() {
 
 function code {
     open -a '/Volumes/Macintosh HD/Applications/Visual Studio Code.app' "$1"
+}
+
+typeset -A _CODE_WORKSPACES=(
+	masterball       "$HOME/Code/code-workspaces/masterball.code-workspace"
+	studionuca       "$HOME/Code/code-workspaces/studionuca.code-workspace"
+	ember            "$HOME/Code/code-workspaces/ember.code-workspace"
+	swag-hub         "$HOME/Code/code-workspaces/swag-community-hub.code-workspace"
+	swag-websites    "$HOME/Code/code-workspaces/swag-websites.code-workspace"
+)
+
+_workspace_path() {
+	local f="${_CODE_WORKSPACES[$1]}"
+	[[ -n "$f" && -f "$f" ]] && print -r -- "$f"
+}
+
+function cursor {
+	if (( $# == 1 )); then
+		local wf
+		wf=$(_workspace_path "$1")
+		if [[ -n "$wf" ]]; then
+			command cursor "$wf"
+			return
+		fi
+	fi
+	command cursor "$@"
+}
+
+function vscode {
+	if (( $# == 1 )); then
+		local wf
+		wf=$(_workspace_path "$1")
+		if [[ -n "$wf" ]]; then
+			code "$wf"
+			return
+		fi
+	fi
+	open -a '/Volumes/Macintosh HD/Applications/Visual Studio Code.app' "$@"
 }
 
 # Set default terminal directory on start up of terminal
