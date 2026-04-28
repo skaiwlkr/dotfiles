@@ -47,6 +47,9 @@ alias gamend="git commit -av --amend --no-edit"
 alias gclean="git fetch --prune && for branch in \$(git branch --format '%(refname:short)' | grep -v 'main' | grep -v 'master'); do if ! git show-ref --verify --quiet refs/remotes/origin/\$branch; then git branch -d \$branch; fi; done"
 alias gcleanall="git fetch --prune && for branch in \$(git branch --format '%(refname:short)' | grep -v 'main' | grep -v 'master'); do upstream=\$(git for-each-ref --format='%(upstream:short)' refs/heads/\$branch); if [ -z \"\$upstream\" ]; then echo '🗑  Deleting local-only branch (likely squash-merged):' \$branch; git branch -D \$branch; elif ! git show-ref --verify --quiet refs/remotes/\$upstream; then echo '🗑  Deleting branch with gone upstream (likely squash-merged):' \$branch; git branch -D \$branch; fi; done"
 
+# ALIASES SSH
+alias pubkey="cat ~/.ssh/id_rsa.pub && if [[ \$(uname) == 'Darwin' ]]; then cat ~/.ssh/id_rsa.pub | pbcopy; else cat ~/.ssh/id_rsa.pub | xclip -selection clipboard; fi && echo '=> Public key copied to clipboard.'"
+
 # ALIASES ZSH
 alias zshconfig="code ~/.zshrc"
 
