@@ -79,6 +79,8 @@ typeset -A _CODE_WORKSPACES=(
 	masterball       "$HOME/Code/code-workspaces/masterball.code-workspace"
 	studionuca       "$HOME/Code/code-workspaces/studionuca.code-workspace"
 	ember            "$HOME/Code/code-workspaces/ember.code-workspace"
+	sebastiankaier 	 "$HOME/Code/code-workspaces/sebastiankaier.code-workspace"
+	c-gebhard        "$HOME/Code/code-workspaces/customer-gebhard.code-workspace"
 	swag-hub         "$HOME/Code/code-workspaces/swag-community-hub.code-workspace"
 	swag-websites    "$HOME/Code/code-workspaces/swag-websites.code-workspace"
 )
