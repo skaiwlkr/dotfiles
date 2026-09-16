@@ -83,6 +83,7 @@ typeset -A _CODE_WORKSPACES=(
 	c-gebhard        "$HOME/Code/code-workspaces/customer-gebhard.code-workspace"
 	swag-hub         "$HOME/Code/code-workspaces/swag-community-hub.code-workspace"
 	swag-websites    "$HOME/Code/code-workspaces/swag-websites.code-workspace"
+	swag-meteor-web  "$HOME/Code/code-workspaces/swag-meteor-web-foundations.code-workspace"
 )
 
 _workspace_path() {
