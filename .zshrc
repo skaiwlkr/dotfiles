@@ -115,5 +115,8 @@ function vscode {
 	open -a '/Volumes/Macintosh HD/Applications/Visual Studio Code.app' "$@"
 }
 
+export NVM_DIR="$HOME/.nvm"
+source "$(brew --prefix nvm)/nvm.sh"
+
 # Set default terminal directory on start up of terminal
 cd ~/Code
